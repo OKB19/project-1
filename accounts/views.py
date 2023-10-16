@@ -206,3 +206,5 @@ def winner(request, id):
 		date_created = election.date_created
 	context = {'previous_winners':previous_winners, 'winner_id':winner_id, 'winner_name':winner_name, 'winner_votes':winner_votes, 'winner_party':winner_party, 'last_election_date':last_election_date, 'date_created':date_created}
 	return render(request, 'accounts/winner.html/', context)
+
+
